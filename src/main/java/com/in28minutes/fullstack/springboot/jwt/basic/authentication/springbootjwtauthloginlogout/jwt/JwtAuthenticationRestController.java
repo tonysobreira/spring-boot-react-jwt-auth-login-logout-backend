@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@CrossOrigin(origins={ "http://localhost:3000", "http://localhost:4200" })
-@CrossOrigin(origins = {"http://spring-boot-react-jwt-frontend.herokuapp.com"})
+@CrossOrigin(origins = {"*"})
 public class JwtAuthenticationRestController {
 
 	@Value("${jwt.http.request.header}")
